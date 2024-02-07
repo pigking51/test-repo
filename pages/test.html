@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연결페이지1</title>
+  </head>
+  <style>
+    div {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    button {
+      margin-top: 40px;
+    }
+
+    .wow {
+      animation: wow 2s linear infinite;
+    }
+    @keyframes wow {
+      to {
+        transform: rotate(-360deg);
+      }
+    }
+  </style>
+  <body>
+    <h1>연결된 페이지입니다.</h1>
+    <div id="cd">
+      <img src="../resource/img/1485265732475.gif" />
+      <!-- <img src="resource/img/provoke.gif" /> -->
+    </div>
+    <button id="rotate">회전</button>
+    <button id="stop">멈춤</button>
+  </body>
+  <script>
+    const Lp = document.getElementById("cd");
+    const btn = document.getElementById("rotate");
+    const stop = document.getElementById("stop");
+
+    // btn.addEventListener("click", function () {
+    //   Lp.animate([{ transform: rotate(0) }, { transform: rotate(360) }], {
+    //     duration: 500,
+    //     easing: "ease-in",
+    //   });
+    // });
+
+    btn.addEventListener("click", function () {
+      if (Lp.classList.contains("wow") == false) {
+        Lp.classList.add("wow");
+      } else {
+        return;
+      }
+    });
+    stop.addEventListener("click", function () {
+      if (Lp.classList.contains("wow")) {
+        Lp.classList.remove("wow");
+      } else {
+        return;
+      }
+    });
+  </script>
+</html>
