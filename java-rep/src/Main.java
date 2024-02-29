@@ -42,8 +42,7 @@ public class Main {
         System.out.println();
 
         // Java 기본 자료형 8가지
-        // byte, short, int, long, float, double, boolean, char
-
+        // 정수 : byte, short, int, long 실수 : float, double 그외? : boolean, char
         // 전위형, 후위형 증감 연산자가 동일한 결과를 출력할 때
         int aab = 3;
         ++aab;
@@ -66,5 +65,20 @@ public class Main {
         int bba1 = abb1++;
         System.out.println(abb1);
         System.out.println(bba1);
+        System.out.println();
+        System.out.println();
+
+        // 삼항연산자
+        int x = 90;
+        String value1 = (x >= 90) ? "합격했습니다":"불합격입니다";
+        System.out.println(value1);
+        System.out.println();
+        System.out.println();
+
+        double y = 88.6;
+        String value2 = (y >= 88.5 && y < 90) ? "성공":"실패";
+        System.out.println(value2);
+
+
     }
 }
