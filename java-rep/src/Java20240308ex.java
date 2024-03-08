@@ -25,7 +25,7 @@ public class Java20240308ex {
         int[] numList = new int[]{25, 10, 20, 45, 50, 89, 42};
         int max = 0;
         for(int i = 1; i < numList.length; i++){
-            for(int j = 0; j < i && i < 6 ; j++){
+            for(int j = 0; j < i && i < numList.length-1 ; j++){
                 if(numList[i]>numList[j] && numList[i+1] < numList[j+1]){
                     max = numList[i];
                     break;
