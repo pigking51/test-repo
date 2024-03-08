@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Java20240306String2 {
     public static void main(String[] args) {
@@ -102,7 +103,7 @@ public class Java20240306String2 {
         System.out.println();
         
         // 자바에서 입력값을 받는 방법
-         Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         System.out.println("0 ~ 6까지 숫자를 입력해주세요 : ");
         int inputNumber = scan.nextInt();
         if(inputNumber >= 0 && inputNumber <= 6){
