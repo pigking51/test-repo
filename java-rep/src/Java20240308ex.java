@@ -24,8 +24,8 @@ public class Java20240308ex {
         // 240308쪽지시험 10번 코드복기
         int[] numList = new int[]{25, 10, 20, 45, 50, 89, 42};
         int max = 0;
-        for(int i = 1; i < numList.length; i++){
-            for(int j = 0; j < i && i < numList.length-1 ; j++){
+        for(int i = 0; i < numList.length-1 ; i++){
+            for(int j = 0; j < i ; j++){
                 if(numList[i]>numList[j] && numList[i+1] < numList[j+1]){
                     max = numList[i];
                     break;
