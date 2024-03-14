@@ -31,6 +31,7 @@ public class Java240311Method_Re {
     }
 
     public static int plusNums(int... values){
+        int[] intArray = {1, 2, 3, 4, 5};
         int sum = 0;
         for(int i = 0; i < intArray.length; i++){
             sum = sum + intArray[i];
