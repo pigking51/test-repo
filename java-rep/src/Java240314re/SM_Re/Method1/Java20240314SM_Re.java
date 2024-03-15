@@ -12,7 +12,14 @@ class B extends A{
     }
 }
 class C{
-    C()
+    C(int a){
+        System.out.println("C 생성자");
+    }
+}
+class D extends C{
+    D(){
+        super(3);
+    }
 }
 public class Java20240314SM_Re {
 
